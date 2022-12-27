@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/bootstrap2.css">
+    <link rel="stylesheet" href="../static/rezervation_room.css">
+    <script src="../static/js/bootstrap.js"></script>
+    <title>Rezervation room</title>
+</head>
+<body class="color">
+    <div class="container">
+        <h1 class="col text-center">Rezervation room</h1>
+    </div>
+        <div class="row">
+            <div class="col text-center">Standarta divvietīgs numurs liela divguļamā gultas</div>
+            <div class="col text-center">Maksimāli 3 cilvēki</div>
+            <div class="col"><img src="../static/img/image1.png" alt="" class="image2"></div>
+            <div class="col text-center">450 eiro</div>
+            <div class="col text-center button">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Rezervation istaba</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <form action="/Viesnica/Viesnicas/php/data1.php" method="POST">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Rezervation room</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Vards"><br>
+                                    <input type="text" name="email" id="Epasts vai personals datus" class="form-control" placeholder="Epasts vai personals datus"><br>
+                                    <input type="text" name="date" id="date" class="form-control" placeholder="Ierašanās datums"><br>
+                                    <input type="text" name="date2" id="date" class="form-control" placeholder="Izlidošanas skaits"><br>
+                                    <input type="text" name="people_number" id="Cilvēku skaits" class="form-control" placeholder="Cilvēku skaits"><br>
+                                    <a href="../templates/residence_order.html"><p>Pirms apstiprināšanas, lūdzu, vispirms izlasiet mūsu viesnīcas noteikumus!!!</p></a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="submit" name="registration" value="1" class="btn btn-primary submit-registration">Rezervet</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">Standarta vienvietīgs numurs 1 vienvietīga gulta</div>
+            <div class="col text-center">Maksimāli 1 cilvēki</div>
+            <div class="col"><img src="../static/img/image2.png" alt="" class="image2"></div>
+            <div class="col text-center">750 eiro</div>
+            <div class="col text-center button">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Rezervation istaba</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <form action="/Viesnica/Viesnicas/php/data1.php" method="POST">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Rezervation room</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Vards"><br>
+                                <input type="text" name="Epasts vai personas dati" id="Epasts vai personals datus" class="form-control" placeholder="Epasts vai personals datus"><br>
+                                <input type="text" name="date" id="date" class="form-control" placeholder="Ierašanās datums"><br>
+                                <input type="text" name="date" id="date" class="form-control" placeholder="Izlidošanas skaits"><br>
+                                <input type="text" name="Cilvēku skaits" id="Cilvēku skaits" class="form-control" placeholder="Cilveku skaits"><br>
+                                <a href="../templates/residence_order.html"><p>Pirms apstiprināšanas, lūdzu, vispirms izlasiet mūsu viesnīcas noteikumus!!!</p></a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Rezervet</button>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">Luksusa komplekts 1 liela divguļamā gulta</div>
+            <div class="col text-center">Maksimāli 4 cilvēki</div>
+            <div class="col"><img src="../static/img/image3.png" alt="" class="image2"></div>
+            <div class="col text-center">150 eiro</div>
+            <div class="col text-center button">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Rezervation istaba</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <form action="/Viesnica/Viesnicas/php/data1.php" method="post">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Rezervation room</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Vards"><br>
+                                <input type="text" name="Epasts vai personas dati" id="Epasts vai personals datus" class="form-control" placeholder="Epasts vai personals datus"><br>
+                                <input type="text" name="date" id="date" class="form-control" placeholder="Ierašanās datums"><br>
+                                <input type="text" name="date" id="date" class="form-control" placeholder="Izlidošanas skaits"><br>
+                                <input type="text" name="Cilvēku skaits" id="Cilvēku skaits" class="form-control" placeholder="Cilveku skaits"><br>
+                                <a href="../templates/residence_order.html"><p>Pirms apstiprināšanas, lūdzu, vispirms izlasiet mūsu viesnīcas noteikumus!!!</p></a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Rezervet</button>
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center button2">
+                <a href="../templates/index.html"><button class="btn" type="submit" name="submit" id="submit">Back</button></a>
+            </div>
+        <div class="col text-center button">
+            <a href="../templates/residence_order.html"><button class="btn" type="submit" name="submit" id="submit">Continue</button></a>
+        </div>
+    </div>
+</body>
+</html>
